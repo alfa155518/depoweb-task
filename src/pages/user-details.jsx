@@ -41,7 +41,7 @@ const UserDetails = () => {
         City: <span>{userDetails.address?.city}</span>
       </p>
       <button className="btn-back">
-        <Link to={"/"}>
+        <Link to={"/depoweb-task"}>
           <FaArrowAltCircleLeft className="arrow" />
         </Link>
       </button>
