@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/frontEnd-E-commerce-food-products/static/css/main.cad632cc.css",
-    "main.js": "/frontEnd-E-commerce-food-products/static/js/main.c4da03c9.js",
+    "main.js": "/frontEnd-E-commerce-food-products/static/js/main.643524ec.js",
     "static/media/not-found.webp": "/frontEnd-E-commerce-food-products/static/media/not-found.16291284804084a92513.webp",
     "static/media/default.WebP": "/frontEnd-E-commerce-food-products/static/media/default.9416bbd40a16b7a7fd17.WebP",
     "index.html": "/frontEnd-E-commerce-food-products/index.html",
     "main.cad632cc.css.map": "/frontEnd-E-commerce-food-products/static/css/main.cad632cc.css.map",
-    "main.c4da03c9.js.map": "/frontEnd-E-commerce-food-products/static/js/main.c4da03c9.js.map"
+    "main.643524ec.js.map": "/frontEnd-E-commerce-food-products/static/js/main.643524ec.js.map"
   },
   "entrypoints": [
     "static/css/main.cad632cc.css",
-    "static/js/main.c4da03c9.js"
+    "static/js/main.643524ec.js"
   ]
 }
