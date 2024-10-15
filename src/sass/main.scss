@@ -1,0 +1,22 @@
+@import "./helpers/mixins";
+@import "./helpers/variables";
+
+// Pages
+@import "./pages/home";
+@import "./pages/user-details";
+@import "./pages/not-found";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: $bodyColor;
+}

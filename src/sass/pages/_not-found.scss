@@ -1,0 +1,75 @@
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+    color: $secondaryColor;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .img {
+    img {
+      width: 50%;
+      height: auto;
+    }
+    p {
+      font-size: 2rem;
+      color: $secondaryColor;
+    }
+  }
+  .btn {
+    color: $secondaryColor;
+    font-family: inherit;
+    display: inline-block;
+    margin: 2rem auto;
+    padding: 0.4rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 0.2rem solid $secondaryColor;
+    @include transition(0.3s);
+    z-index: 1;
+    font-size: 1.5rem;
+    @include radios(0.6rem);
+    font-weight: 500;
+    color: $secondaryColor;
+    background-color: $bodyColor;
+  }
+  a {
+    color: $textColor;
+    text-decoration: none;
+  }
+  .btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: $secondaryColor;
+    height: 15rem;
+    width: 20rem;
+    border-radius: 50%;
+  }
+
+  .btn:hover {
+    a {
+      color: $textColor;
+    }
+  }
+
+  .btn:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+
+  .btn:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+
+  .btn:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
+}

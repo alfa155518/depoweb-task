@@ -1,0 +1,23 @@
+@mixin radios($radios) {
+  border-radius: $radios;
+  -webkit-border-radius: $radios;
+  -moz-border-radius: $radios;
+  -ms-border-radius: $radios;
+  -o-border-radius: $radios;
+}
+
+@mixin secondRadios {
+  border-radius: 0.6rem 0 0.6rem 0;
+  -webkit-border-radius: 0.6rem 0 0.6rem 0;
+  -moz-border-radius: 0.6rem 0 0.6rem 0;
+  -ms-border-radius: 0.6rem 0 0.6rem 0;
+  -o-border-radius: 0.6rem 0 0.6rem 0;
+}
+
+@mixin transition($time) {
+  transition: all $time ease-in-out;
+  -webkit-transition: all $time ease-in-out;
+  -moz-transition: all $time ease-in-out;
+  -ms-transition: all $time ease-in-out;
+  -o-transition: all $time ease-in-out;
+}
