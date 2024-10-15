@@ -6,18 +6,27 @@ import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const UserDetails = () => {
   const ApiUsers = process.env.REACT_APP_API_URL;
-  const [userDetails, setUserDetails] = useState([]);
-  const { id } = useParams();
-  console.log(id);
-  const fetchUserData = async () => {
-    const { data } = await axios(ApiUsers);
 
-    const findUserDetails = await data.find((user) => {
-      return user.id === Number(id);
-    });
-    const user = await findUserDetails;
-    return setUserDetails(user);
+  const [userDetails, setUserDetails] = useState([]);
+
+  const { id } = useParams();
+
+  const fetchUserData = async () => {
+    try {
+      const { data } = await axios(ApiUsers);
+      const findUserDetails = data.find((user) => user.id === Number(id));
+
+      // Check if user details were found
+      if (findUserDetails) {
+        setUserDetails(findUserDetails);
+      } else {
+        console.error("User not found");
+      }
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
   };
+
   useEffect(() => {
     fetchUserData();
   }, [id]);
@@ -41,7 +50,7 @@ const UserDetails = () => {
         City: <span>{userDetails.address?.city}</span>
       </p>
       <button className="btn-back">
-        <Link to={"/depoweb-task"}>
+        <Link to={"/"}>
           <FaArrowAltCircleLeft className="arrow" />
         </Link>
       </button>

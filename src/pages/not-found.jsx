@@ -9,7 +9,7 @@ const NotFound = () => {
         <p className="">uh-oh! Nothing Here...</p>
       </div>
       <button className="btn">
-        <Link href="/depoweb-task">Return to Home Page</Link>
+        <Link href="/">Return to Home Page</Link>
       </button>
     </div>
   );
